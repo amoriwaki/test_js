@@ -20,11 +20,6 @@ install:
     - export ANDROID_SDK_ROOT=/usr/local/android-sdk
     - export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
 
-# git submodule
-# Use sed to replace the SSH URL with the public URL, then initialize submodules
-    - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
-    - git submodule update --init --recursive
-
 # cocos setup 
     - cd ./cocos2d
     - python download-deps.py --remove-download=yes
