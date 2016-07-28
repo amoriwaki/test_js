@@ -31,8 +31,9 @@ install:
     - export ANT_ROOT=/usr/share/ant/bin
     - export PATH=$PATH:$ANT_ROOT
     - printenv
-
-script:
     - cd ..
     - echo `pwd`
+    - source /home/travis/.bashrc
+
+script:
     - cocos -v
