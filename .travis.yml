@@ -33,5 +33,5 @@ install:
     - printenv
 
 script:
-    - cd ..
+    - cd ../
     - cocos compile -p android -j 8
