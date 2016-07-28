@@ -33,7 +33,7 @@ before_install:
     - cd ..
     - echo `pwd`
     - printenv
-    - cocos -v
+    - $COCOS_CONSOLE_ROOT/cocos -v
 
 #script:
 #    - cocos -v
