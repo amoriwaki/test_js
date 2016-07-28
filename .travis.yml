@@ -4,7 +4,7 @@ language: android
 git:
     submodules: false
 
-install:
+before_install:
 # NDK configuration
     - printenv
     - echo `pwd`
