@@ -33,5 +33,6 @@ install:
     - printenv
 
 script:
+    - cd ..
     - echo `pwd`
-    - cocos compile -p android -j 8
+    - cocos -v
