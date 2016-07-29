@@ -6,19 +6,19 @@ git:
 
 before_install:
 # NDK configuration
-    - printenv
-    - echo `pwd`
-    - wget http://dl.google.com/android/ndk/android-ndk-r10d-linux-x86_64.bin
-    - chmod a+x android-ndk-r10d-linux-x86_64.bin
-    - ./android-ndk-r10d-linux-x86_64.bin -y | grep -v Extracting # because log will be too long!
-    - export NDK_ROOT=`pwd`/android-ndk-r10d
-    - echo $NDK_ROOT
-    - export PATH=$PATH:$NDK_ROOT
-    - echo $PATH
+#    - printenv
+#    - echo `pwd`
+#    - wget http://dl.google.com/android/ndk/android-ndk-r10d-linux-x86_64.bin
+#    - chmod a+x android-ndk-r10d-linux-x86_64.bin
+#    - ./android-ndk-r10d-linux-x86_64.bin -y | grep -v Extracting # because log will be too long!
+#    - export NDK_ROOT=`pwd`/android-ndk-r10d
+#    - echo $NDK_ROOT
+#    - export PATH=$PATH:$NDK_ROOT
+#    - echo $PATH
 
 # Android SDK configuration
-    - export ANDROID_SDK_ROOT=/usr/local/android-sdk
-    - export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
+#    - export ANDROID_SDK_ROOT=/usr/local/android-sdk
+#    - export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
 
 # cocos setup 
     - git clone http://github.com/cocos2d/cocos2d-x.git
@@ -26,7 +26,7 @@ before_install:
     - python download-deps.py -r yes
     - git submodule update --init
     - mkdir ~/.cocos
-    - echo '{ "agreement_showed": true }' > ~/.cocos/local_cfg.json
+    - echo '{ "agreement_showed": true }' > ~/.cocos/local_cfg.json &> /dev/null
     - export COCOS_CONSOLE_ROOT=`pwd`/tools/cocos2d-console/bin
     - export PATH=$PATH:$COCOS_CONSOLE_ROOT
     - export COCOS_TEMPLATES_ROOT=`pwd`/templates
