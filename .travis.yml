@@ -1,8 +1,11 @@
-language: android
+#language: android
+language: javascript
 
 # Handle git submodules yourself
 git:
     submodules: false
+
+colon: ':'
 
 before_install:
 # NDK configuration
