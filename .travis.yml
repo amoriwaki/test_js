@@ -43,4 +43,5 @@ before_install:
     - cocos -v
 
 script:
+    - cd cocos2d
     - cocos compile -p web -m release
