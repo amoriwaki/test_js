@@ -42,5 +42,5 @@ before_install:
     - printenv
     - cocos -v
 
-#script:
-#    - cocos -v
+script:
+    - cocos compile -p web -m release
