@@ -50,5 +50,6 @@ before_install:
     - cd cocos2d
 
 script:
+    - jslint 'src/*.js'
     - cocos compile -p web -m release
 
