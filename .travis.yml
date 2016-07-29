@@ -44,7 +44,5 @@ before_install:
 
 script:
     - cd cocos2d
-    - cocos compile -p web -m release
-    - expect "Delete 'v3-console-13.zip' file? It may be reused when you execute this script next time! (yes/no):"
-    - send "yes\n"
+    - expect -c "spawn cocos compile -p web -m release; expect "Delete 'v3-console-13.zip' file? It may be reused when you execute this script next time! (yes/no):"; send "yes\n"
     
