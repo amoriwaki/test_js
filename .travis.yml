@@ -24,7 +24,7 @@ before_install:
 #    - export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
 
 # node 
-    - npm install --save jslint
+    - npm install -g jslint
 
 # cocos setup 
     - git clone http://github.com/cocos2d/cocos2d-x.git
