@@ -1,5 +1,7 @@
 {
+  "plusplus": true,
   "globals": {
-    "cc": true
-  }
+    "__dirname": true
+  },
+  "predef": "cc, ccui, scale, res"
 }
