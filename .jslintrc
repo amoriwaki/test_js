@@ -3,5 +3,5 @@
   "globals": {
     "__dirname": true
   },
-  "predef": "cc, ccui, scale, res"
+  "predef": ["cc", "ccui", "scale", "res"]
 }
