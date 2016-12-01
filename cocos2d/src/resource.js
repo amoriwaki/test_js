@@ -3,7 +3,8 @@ var res = {
 };
 
 var g_resources = [];
-for (var i in res) { 
+var i;
+for (i in res) { 
     if (res.hasOwnProperty(i)) {
         g_resources.push(res[i]);
     }
