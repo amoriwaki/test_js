@@ -4,7 +4,8 @@
      "parserOptions": {},
      "env": {"browser": true},
      "globals": {
-         "cc": false
+         "cc": false,
+         "res": false
      },
      "rules": {}
  }
