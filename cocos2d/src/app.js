@@ -1,7 +1,7 @@
 
 var HelloWorldLayer = cc.Layer.extend({
-    sprite:null,
-    ctor:function () {
+    sprite: null,
+    ctor: function () {
         'use strict';
         //////////////////////////////
         // 1. super init first
@@ -37,7 +37,7 @@ var HelloWorldLayer = cc.Layer.extend({
 });
 
 var HelloWorldScene = cc.Scene.extend({
-    onEnter:function () {
+    onEnter: function () {
         'use strict';
         this._super();
         var layer = new HelloWorldLayer();
