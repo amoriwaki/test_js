@@ -2,21 +2,23 @@
 var HelloWorldLayer = cc.Layer.extend({
     sprite:null,
     ctor:function () {
+        'use strict';
         //////////////////////////////
         // 1. super init first
         this._super();
 
+        var size, helloLabel;
         /////////////////////////////
         // 2. add a menu item with "X" image, which is clicked to quit the program
         //    you may modify it.
         // ask the window size
-        var size = cc.winSize;
+        size = cc.winSize;
 
         /////////////////////////////
         // 3. add your codes below...
         // add a label shows "Hello World"
         // create and initialize a label
-        var helloLabel = new cc.LabelTTF("Hello World", "Arial", 38);
+        helloLabel = new cc.LabelTTF("Hello World", "Arial", 38);
         // position the label on the center of the screen
         helloLabel.x = size.width / 2;
         helloLabel.y = size.height / 2 + 200;
@@ -36,6 +38,7 @@ var HelloWorldLayer = cc.Layer.extend({
 
 var HelloWorldScene = cc.Scene.extend({
     onEnter:function () {
+        'use strict';
         this._super();
         var layer = new HelloWorldLayer();
         this.addChild(layer);
